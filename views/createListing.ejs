@@ -1,0 +1,30 @@
+<% layout('/layouts/boilerplate') %>
+<body>
+    <h1 class="mx-auto mt-4 col-4">List Your Place for Rent</h1>
+    <form method="post" action="/new" class="col-6 mx-auto border rounded shadow p-4 m-4 row g-3 needs-validation" novalidate>
+        <div class="mb-3">
+          <label for="title" class="form-label">Title:</label>
+          <input type="text"  name="title" class="form-control" placeholder="Enter Your title of the Place..." required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="description" class="form-label">Description:</label>
+          <textarea name="description" class="form-control" id="" placeholder="Tell us about place in detail.."></textarea>
+        </div>
+        <div class="mb-3 ">
+          <label for="image" class="form-label">Image Url: </label>
+          <input type="text" name="image_url" class="form-control" placeholder="Enter your Image URL in the form of http://">
+        </div>
+        <div class="mb-3">
+          <label for="price" class="form-label">Price: </label>
+          <input type="number" name="price" class="form-control" >
+        </div>
+        <div class="mb-3">
+          <label for="location" class="form-label">Location: </label>
+          <input type="text" name="location" class="form-control" placeholder="Enter Your Place Location" >
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</body>

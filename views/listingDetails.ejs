@@ -1,0 +1,27 @@
+<% layout('/layouts/boilerplate') %>
+
+<head>
+    <title><%= place.title %></title>
+</head>
+<body>
+    <div class="card mb-3 col-10 mx-auto mt-4" >
+        <div class="row g-0 p-4">
+          <div class="col-md-6 mx-auto">
+            <img src="<%= place.image_url %>" class="img-fluid rounded" alt="...">
+          </div>
+          <div class="col-md-6 mx-auto ">
+            <div class="card-body">
+              <h2 class="card-title"><%= place.title %></h2>
+              <p class="card-title">⭐️⭐️⭐️⭐️⭐️</p>
+              <h4 class="card-text">$ <%= place.price %></h4>
+              <p class="card-text"><%= place.description %></p>
+              <div class="d-flex col-6 gap-2 ">
+                <button class="btn btn-primary col-6" type="button">Add To Cart</button>
+                <button class="btn btn-primary col-6" type="button">Buy Now </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</body>
